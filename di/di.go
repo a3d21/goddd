@@ -11,6 +11,7 @@ import (
 	"github.com/a3d21/goddd/infra/prodinfra"
 )
 
+//go:generate go test . -gen
 func GetContainerByEnv() *dig.Container {
 	switch os.Getenv("APP_ENV") {
 	case "mem":
